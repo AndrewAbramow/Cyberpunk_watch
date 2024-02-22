@@ -1,8 +1,9 @@
 #include <TFT_eSPI.h>
 
-#include "Orbitron_Medium_64.h"  // UTF-8 Encoding!
+#include "Orbitron_Medium_58.h"  // UTF-8 Encoding!
 #include <microDS3231.h>
 #include "graph.h"
+#include "HUD_cropped.h"
 #include "hand.h"
 #include "scull.h"
 #include "sonar.h"
@@ -101,10 +102,11 @@ void ShowFrwBckwrdGif(const uint16_t (&arr)[rows][cols], uint16_t width, uint16_
 void ShowTime() {
   if (millis() - tmr1 >= 1000) {
     tmr1 = millis();
-    s.fillSprite(TFT_BLACK);    
-    s.setTextColor(TFT_WHITE, 0x014C);
-    s.setFreeFont(&Orbitron_Medium_64);
-    s.drawString(rtc.getTimeString(), 0, 40);
+    s.fillSprite(TFT_BLACK);
+    s.pushImage(0, 0, 320, 170, HUD_cropped);    
+    s.setTextColor(0xFFE0);
+    s.setFreeFont(&Orbitron_Medium_58);
+    s.drawString(rtc.getTimeString(), 8, 10);
     s.pushSprite(0,0);
   }
 }
