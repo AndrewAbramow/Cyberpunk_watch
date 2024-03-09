@@ -14,7 +14,7 @@ LILYGO T-Display-S3 based watch.
 ## Schematic
 ![Scheme](./Docs/Scheme.png)
 ## Docs
-(./Docs)
+(./Docs/)
 ## Useful Resources
 - [T-Display-S3](https://github.com/Xinyuan-LilyGO/T-Display-S3)
 - [DS3231](https://www.es.co.th/Schemetic/PDF/DS3231.PDF)
