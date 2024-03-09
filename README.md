@@ -1,5 +1,5 @@
 # Cyberpunk watch.
-![alt text](https://github.com/AndrewAbramow/Cyberpunk_watch/tree/main/Docs/Image.jpg)
+![alt text](./Docs/Image.jpg)
 ## Features
 LILYGO T-Display-S3 based watch.
 ## Demonstration
