@@ -53,8 +53,7 @@ void setup() {
   Serial.begin(9600);
   if (!Begin()) {
     Serial.println("DS3231 not found");
-    for (;;)
-      ;
+    for (;;);
   }
   rtc.setTime(COMPILE_TIME);
   // battery
